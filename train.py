@@ -154,8 +154,8 @@ def main(_argv):
                     unfreeze_all(freeze)
         for image_data, target in trainset:
             train_step(image_data, target)
-        for image_data, target in testset:
-            test_step(image_data, target)
+        # for image_data, target in testset:
+        #     test_step(image_data, target)
         model.save_weights("../")
 
 if __name__ == '__main__':
